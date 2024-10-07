@@ -1,0 +1,166 @@
+/* Font face declaration */
+@font-face {
+    font-family: 'Poppins';
+    src: url('../assets/Font/Poppins/Poppins-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Paytone One';
+    src: url('../assets/Font/Paytone_One/PaytoneOne-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar styles */
+.navbar {
+    position: fixed !important;
+    width: 100%;
+    top: 0;
+}
+
+.navbar-brand {
+    font-family: 'Paytone One', sans-serif;
+    font-weight: 50px;
+}
+
+/* Title styles */
+.title {
+    font-weight: bold;
+    margin-top: 7rem;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+}
+
+.title-color {
+    color: #198754;
+}
+
+/* Main section styles */
+.utama p {
+    margin-top: 1.5rem;
+    margin-bottom: 5rem;
+}
+
+/* Brand section */
+.brand {
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: #198754;
+    color: white;
+    border-radius: 0.5rem;
+    padding: 10px;
+    display: flex;
+}
+
+/* Content section */
+.content {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.content .box {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.content .box img {
+    border-radius: 24px !important;
+}
+
+.content .box .text {
+    text-align: left;
+}
+
+.content .box .text h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+    color: #198754;
+}
+
+.content .box .text p {
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0;
+    margin-bottom: 1rem;
+    text-align: justify;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Text alignment */
+.text-justify {
+    text-align: justify;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Subscribe section */
+.subscribe {
+    margin-left: 10px;
+}
+
+/* Image hover effect */
+.box img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.box img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Media queries for responsive images */
+@media screen and (max-width: 576px), screen and (max-width: 997px) {
+    .box img:hover {
+        transform: none !important;
+        box-shadow: none !important;
+    }
+}
+
+/* Button styles */
+.btn-success {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #198754;
+}
+
+.btn-success:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    background-color: #17c071 !important;
+}
+
+/* Footer styles */
+footer a img {
+    transition: transform 0.3s ease;
+}
+
+footer a img:hover {
+    transform: scale(1.5);
+}
+
+/* Copyright text */
+.copyright-text {
+    font-size: 16px;
+}
+
+/* Responsive copyright text */
+@media screen and (max-width: 576px) {
+    .copyright-text {
+        font-size: 12px;
+    }
+}
